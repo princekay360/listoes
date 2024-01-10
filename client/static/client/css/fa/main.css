@@ -1,0 +1,208 @@
+* {
+    font-family: calibri;
+    -webkit-user-select: none; /* Disable selection for Chrome, Safari, and Opera */
+    -moz-user-select: none; /* Disable selection for Firefox */
+    -ms-user-select: none; /* Disable selection for Internet Explorer and Edge */
+    user-select: none; /* Disable selection for all other browsers */
+  }
+
+body{
+    background-color: rgb(255, 255, 255);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.dragbar{
+    width: 80%;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    height: 10px;
+    background-color:rgba(30, 48, 80, 0.15);
+    position: fixed;
+    -webkit-app-region: drag;
+    left: 10%;
+    top: 0;
+    cursor: pointer;
+}
+
+
+.t-col-main{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.t-col-main .t-col-main-col-1{
+    position: fixed;
+    /* display: grid; */
+    width: 20%;
+    height: 100%;
+    grid-template-rows: 10% 80% 10%;
+    z-index: 20;
+}
+
+.t-col-main .t-col-main-col-1 .div-1{
+    align-items: center;
+    display: flex;
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 100px; */
+    margin-top: 10%;
+}
+
+.div-1 .back-icon{
+    font-size: 25px;
+    margin: 0 9% 0 3%;
+    cursor: pointer;
+}
+
+.div-1 .title{
+    color: rgba(30, 48, 80, 0.5); 
+    font-size: 20px;
+    font-family: calibri;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+
+.div-1 .w-handles{
+    display: flex;
+    flex-direction: row;
+}
+
+.w-handles span{
+    border-radius: 100px;
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.w-restore{
+   border: 2px solid rebeccapurple;
+}
+
+.w-close{
+    border: 2px solid lightcoral;
+}
+
+.w-minimize{
+    border: 2px solid lightgreen;
+}
+
+.w-restore:hover{
+    background-color: rebeccapurple;
+}
+
+.w-close:hover{
+    background-color:  lightcoral;
+}
+
+.w-minimize:hover{
+    background-color:  lightgreen;
+}
+
+
+
+
+.nav-cont{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    border-right: 2px solid rgba(30, 48, 80, 0.233);
+    margin-top: 30%;
+}
+
+.nav-cont navitem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 6%;
+}
+
+.nav-cont navitem i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+navitem indicator{
+    width: 12px;
+    height: 4px;
+    background-color:rgba(30, 48, 80, 0.45);
+    display: block;
+    margin-top: 7px;
+    border-radius: 100px;
+}
+
+
+
+.m-body{
+    margin: 20px 0 0 30px;
+    width: 94%;
+    height: 99%;
+    overflow-y: scroll;
+    display: block;    
+}
+
+
+
+.t-col-main .t-col-main-col-2{
+    display: block;
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    left: 20%;
+    z-index: 1;
+}
+
+
+/* Track */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(30, 48, 80, 0.45);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(30, 48, 80);
+    cursor: pointer !important;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  /* Track when the scrollbar is not hovered */
+  ::-webkit-scrollbar-track:not(:hover) {
+    background-color: #ddd;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .div-1 .title{
+        display: none;
+    }
+  }
+
+

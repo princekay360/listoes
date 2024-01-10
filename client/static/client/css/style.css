@@ -1,0 +1,157 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 32px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff6600;
+}
+
+.home-section {
+  background-image: url('restaurant-image.jpg');
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 200px 0;
+}
+
+.home-section h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.home-section p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e55d00;
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menu-section,
+.about-section,
+.contact-section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.menu-section h2,
+.about-section h2,
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.menu-section p,
+.about-section p,
+.contact-section p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+
+.main-body{
+    margin: 5em 0 0 0;
+}
+
+.profile-card {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-card .picture {
+
+}
+
+.profile-card .details {
+     display: flex;
+     gap: 6px;
+     flex-direction: column;
+     padding: 10px;
+}
+
+.profile-card .details .detail {
+    width: 100%;
+    border-bottom: 0.05px solid #00000014;
+}
+
+
+@media (max-width: 767px){
+    .profile-card {
+        grid-template-rows: 40% 60%;
+        grid-template-columns: none;
+        width: 70%
+    }
+}

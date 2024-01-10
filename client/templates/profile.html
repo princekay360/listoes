@@ -1,0 +1,55 @@
+<!-- myapp/templates/landing_page.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% load baseui %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/mozamas/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/mozamas/assets/css/font-awesome.css">
+     <link rel="icon" href="{% static '/client/img/glass7.jpg' %}" type="image/png">
+     <link rel="stylesheet" href="{% static '/client/css/style.css' %}">
+    <link rel="shortcut icon" href="{% static '/mozamas/mgod.png' %}" type="image/png">
+    <link rel="stylesheet" href="static/mozamas/assets/css/templatemo-training-studio.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <title>Listoes Bar & Restaurant</title>
+</head>
+<body>
+{% header_component active="index" %}
+
+<div class="main-body">
+    <div class="profile-card">
+        <div class="picture">Pricture</div>
+        <div class="details">
+            <div class="detail"><b>status</b> <br> {{client.get_status}}</div>
+            <div class="detail"><b>name</b> <br> {{client.name}}</div>
+            <div class="detail"><b>id</b> <br> {{client.id}}</div>
+            <div class="detail"><b>phone</b> <br> {{client.phone}}</div>
+            <div class="detail"><b>email</b> <br> {{client.email}}</div>
+            <div class="detail"><b>gender</b> <br> {{client.gender}}</div>
+            <div class="detail"><b>joined</b> <br> {{client.joined}}</div>
+        </div>
+    </div>
+</div>
+
+
+ <!-- jQuery -->
+    <script src="static/mozamas/assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="static/mozamas/assets/js/popper.js"></script>
+    <script src="static/mozamas/assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="static/mozamas/assets/js/scrollreveal.min.js"></script>
+    <script src="static/mozamas/assets/js/waypoints.min.js"></script>
+    <script src="static/mozamas/assets/js/jquery.counterup.min.js"></script>
+    <script src="static/mozamas/assets/js/imgfix.min.js"></script>
+    <script src="static/mozamas/assets/js/mixitup.js"></script>
+    <script src="static/mozamas/assets/js/accordions.js"></script>
+    <!-- Global Init -->
+    <script src="static/mozamas/assets/js/custom.js"></script>
+</body>
+</html>

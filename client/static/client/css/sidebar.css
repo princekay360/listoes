@@ -1,0 +1,330 @@
+html{
+    font-family: calibri;
+}
+
+
+a{
+    text-decoration: none;
+}
+/***
+*::-webkit-scrollbar {
+    width: 7px;
+  }
+
+*::-webkit-scrollbar-track {
+      width: 5px;
+  }
+
+*::-webkit-scrollbar-thumb {
+    background-color: lavender;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 7px;
+  } ***/
+
+body{
+    overflow-x: hidden;
+}
+
+.appbar{
+    background: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.appbody{
+    width: 100%;
+    margin: 70px 0 0 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+@media screen and (min-width:992px){
+    .appbody{width:80%; margin: 70px 0 0 10%;}
+}
+
+
+.appbar i{
+    margin: 8px 0 0 30px;
+    cursor: pointer;
+    color: #000;
+}
+
+.appbar span{
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+footer{
+    width: 100%;
+    height: 4em;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b2a2a0d;
+}
+
+
+
+#nav-wrapper{
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(43, 42, 42, 0.096);
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+#side-nav{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: aqua;
+    z-index: 5;
+    transition: 0.5s;
+}
+
+LeftNavDrawer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0px;
+    z-index: 6;
+    background-color: white;
+    transition: 0.5s;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+
+LeftNavDrawer NavListItems ListItem{
+  font-size: 16px;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+  transition: 0.3s;
+  width: 90%;
+  height: 3em;
+  border-radius: 9px;
+  margin: 14px 0 0 12px;
+  cursor: pointer;
+}
+
+
+LeftNavDrawer NavListItems ListItem:hover{
+    background-color: rgba(43, 42, 42, 0.096);
+}
+
+
+LeftNavDrawer NavListItems ListItem Icon {
+  color: black !important;
+  margin: 2px 0 0 10px;
+}
+
+
+
+LeftNavDrawer NavListItems ListItem Name{
+  color: black !important;
+  margin: 0 0 0 0;
+  font-family: 'calibri';
+  font-weight: 400;
+}
+
+LeftNavDrawer NavListItems{
+    
+}
+
+
+
+.article-cont{
+    width: 70%;
+    background: white;
+}
+
+.article-cont .article-read{
+    font-size: 22px;
+    text-align: justify;
+}
+
+.article-cont .article-title{
+   text-transform: uppercase;
+   font-size: 23px;
+}
+
+
+.article-cont .article-img{
+    width: 100%;
+    height: 30em;
+}
+
+.article-cont .article-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width:688px){
+    .article-cont{
+        width: 100%;
+    }
+    
+    
+    .article-cont .article-img{
+        width: 100%;
+    }
+
+    .article-cont .article-read{
+        font-size: 16px;
+    }
+    
+}
+
+
+.section{
+    width: 100%;
+}
+
+.section .sec{
+    width: 100%;
+    height: fit-content;
+    display: -webkit-box;
+    overflow-x: scroll;
+}
+
+.section .sec-2{
+    width: 100%;
+    height: fit-content;
+    padding: 0px 6px;
+}
+
+.sec anansecard{
+    margin: 0 0 10px 20px;
+    width: 80%
+}
+
+
+
+.section .tag {
+    margin: 0 0 0px 3px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: white;
+    box-shadow: 0px -10px 20px 0px rgba(229, 229, 229, 0.75);
+}
+
+.section .tag h3{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    height: 38px;
+}
+
+.section .tag span{
+    height: 38px;
+}
+
+
+
+.side-btn-cont{
+    width: 18%;
+    height: 60%;
+    position: fixed;
+    left: 0;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:992px){
+    .section .sec{
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 44px;
+    display: flex;
+    height: fit-content;
+    padding-top: 20px;
+}
+.sec anansecard {
+    margin: 0 0 20px 20px;
+    width: 280px;
+}
+}
+
+
+.side-btn-cont span:hover{
+    background-color: #7fffd417;
+}
+
+
+.side-btn-cont button {
+    color: white;
+    width: 80%;
+    height: 3em;
+    border: none;
+    border-radius: 9px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0 0 20px;
+    cursor: pointer;
+}
+
+.side-btn-cont span{
+    color: black;
+    width: 80%;
+    height: 3em;
+    border: none;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0 0 20px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:688px){
+    .side-btn-cont{
+        width: 100%;
+        height: 60%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-btn-cont button{width: 90%}
+
+    .two-form .appbody{
+        margin-top: 400px;
+    }
+}
+
+
+

@@ -1,0 +1,68 @@
+<!-- myapp/templates/landing_page.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% load baseui %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/mozamas/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/mozamas/assets/css/font-awesome.css">
+     <link rel="icon" href="{% static '/client/img/glass7.jpg' %}" type="image/png">
+    <link rel="shortcut icon" href="{% static '/mozamas/mgod.png' %}" type="image/png">
+    <link rel="stylesheet" href="static/mozamas/assets/css/templatemo-training-studio.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <title>Listoes Bar & Restaurant</title>
+</head>
+<body>
+
+
+    {% header_component active="login" %}
+
+
+        <div class="main-banner" id="top">
+        <video autoplay muted loop id="bg-video">
+            <source src="static/client/img/f1.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-overlay header-text">
+            <div class="caption">
+                <form method="post" action="{% url 'client_login' %}" style="display:flex; flex-direction: column; justify-content: center; align-items: center; background-color: #1f1f1f4d; height: 23em;
+    width: 19em;">
+                    {% csrf_token %}
+                    <img src="{% static '/client/img/feature-3.jpg' %}" style="width: 120px; height:120px; margin-bottom: 20px; border-radius:100px">
+                    <input type="text" style="width: 80%; height: 50px; border: 1px solid black; border-radius: 9px;
+    padding: 0 15px; margin-bottom: 10px" placeholder="username or phone" name="ep">
+                    <input type="text" placeholder="password" style="width: 80%; height: 50px; border: 1px solid black; border-radius: 9px;
+    padding: 0 15px; margin-bottom: 10px" name="password">
+                    <input type="submit" value="Login" style="width: 80%; height: 50px; border: 1px solid #ed563b; border-radius: 9px;
+                    background-color: #ed563b; color: white; padding: 0 15px; margin-bottom: 10px">
+                    <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; color:#ff4925; width: 78%; font-size:12px">
+                        <div style="cursor:pointer">Forgot Password?</div>
+                        <div style="cursor:pointer">Signup Instead?</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+ <!-- jQuery -->
+    <script src="/static/mozamas/assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="/static/mozamas/assets/js/popper.js"></script>
+    <script src="/static/mozamas/assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="/static/mozamas/assets/js/scrollreveal.min.js"></script>
+    <script src="/static/mozamas/assets/js/waypoints.min.js"></script>
+    <script src="/static/mozamas/assets/js/jquery.counterup.min.js"></script>
+    <script src="/static/mozamas/assets/js/imgfix.min.js"></script>
+    <script src="/static/mozamas/assets/js/mixitup.js"></script>
+    <script src="/static/mozamas/assets/js/accordions.js"></script>
+    <!-- Global Init -->
+    <script src="/static/mozamas/assets/js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+section.movie-section{
+    width: 100%;
+    height: fit-content;
+    display: block;
+}
+
+section.movie-section span.sec-title{   
+    font-size: 23px;
+    font-weight: bold;
+    color:rgba(30, 48, 80);
+}
+
+section.movie-section section.inner-section{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    row-gap: 20px;
+    margin-top: 20px;
+}
+
+section.movie-section section.inner-section moviecard{
+    width: 100%;
+    height: 300px;
+    display: block;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: all 4000ms ease 8000ms
+}
+
+moviecard:hover cover{
+    transform: scale(1.03);
+}
+
+
+moviecard cover{
+    width: 100%;
+    height: 65%;
+    display: block;
+    border-radius: 15px;
+}
+
+cover img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+
+moviecard info{
+    width: 100%;
+    height: 35%;
+    display: grid;
+    padding-top: 10px;
+    padding-left: 3px;
+    grid-template-rows: 35% 30%;
+}
+
+
+moviecard info span.title{
+    font-size: 19px;
+    margin-left: 4px;
+}
+
+
+moviecard info .r-1{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+moviecard info type{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: rgba(30, 48, 80, 0.4);;
+    top: 0;
+    font-weight: bold;
+    margin-right: 15px;
+    justify-self: flex-end;
+}
+
+
+moviecard star i{
+    color: gold
+}

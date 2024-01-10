@@ -1,0 +1,209 @@
+<!-- myapp/templates/landing_page.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% load baseui %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/mozamas/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/mozamas/assets/css/font-awesome.css">
+    <link rel="icon" href="{% static '/client/img/glass7.jpg' %}" type="image/png">
+    <link rel="stylesheet" href="static/mozamas/assets/css/templatemo-training-studio.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+          rel="stylesheet">
+    <title>Listoes Bar & Restaurant</title>
+</head>
+<body>
+{% header_component active="index" %}
+<div class="main-banner" id="top">
+    <video autoplay muted loop id="bg-video">
+        <source src="static/client/img/f1.mp4" type="video/mp4"/>
+    </video>
+
+    <div class="video-overlay header-text">
+        <div class="caption">
+
+            {% if is_login == "true" %}
+            <h6>Welcome {{client.name}}</h6>
+            <h2>Hungry?</em></h2>
+            <div class="main-btns-div">
+                <div class="main-button scroll-to-section">
+                    <a href="#features">Book a Table</a>
+                </div>
+                <div class="main-button scroll-to-section">
+                    <a style="background-color: white; color:#ed563b;" href="#features">Order Now</a>
+                </div>
+            </div>
+            {% else %}
+            <h6>LISTOES</h6>
+            <h2>Bar & Restaurant</em></h2>
+            <div class="main-btns-div">
+                <div class="main-button scroll-to-section">
+                    <a href="#features">Book a Table</a>
+                </div>
+                <div class="main-button scroll-to-section">
+                    <a style="background-color: white; color:#ed563b;" href="#features">Order Now</a>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div>
+    <h3 style="font-family: cursive; width:100%; text-align:center; margin: 200px 0 20px 0">Menu</h3>
+    <div class="menu-cat">Rice</div>
+    <div class="menu-div">
+        <div class="menu-card">
+            <img src="{% static 'client/img/menu-burger-img.jpg' %}">
+            <div>
+                <div class="food">Ham Burger</div>
+                <div>
+                    <div class="rating-div">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price">₵100.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-card">
+            <img src="{% static 'client/img/menu-burger-img.jpg' %}">
+            <div>
+                <div class="food">Ham Burger</div>
+                <div>
+                    <div class="rating-div">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price">₵100.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-card">
+            <img src="{% static 'client/img/menu-burger-img.jpg' %}">
+            <div>
+                <div class="food">Ham Burger</div>
+                <div>
+                    <div class="rating-div">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price">₵100.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-card">
+            <img src="{% static 'client/img/menu-burger-img.jpg' %}">
+            <div>
+                <div class="food">Ham Burger</div>
+                <div>
+                    <div class="rating-div">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price">₵100.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-cat">Rice</div>
+    <div class="menu-div">
+        <div class="menu-card">
+            <img src="{% static 'client/img/menu-burger-img.jpg' %}">
+            <div>
+                <div class="food">Ham Burger</div>
+                <div>
+                    <div class="rating-div">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price">₵100.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-card">
+            <img src="{% static 'client/img/menu-burger-img.jpg' %}">
+            <div>
+                <div class="food">Ham Burger</div>
+                <div>
+                    <div class="rating-div">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price">₵100.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-card">
+            <img src="{% static 'client/img/menu-burger-img.jpg' %}">
+            <div>
+                <div class="food">Ham Burger</div>
+                <div>
+                    <div class="rating-div">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price">₵100.00</div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-card">
+            <img src="{% static 'client/img/menu-burger-img.jpg' %}">
+            <div>
+                <div class="food">Ham Burger</div>
+                <div>
+                    <div class="rating-div">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="price">₵100.00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="static/mozamas/assets/js/jquery-2.1.0.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="static/mozamas/assets/js/popper.js"></script>
+<script src="static/mozamas/assets/js/bootstrap.min.js"></script>
+
+<!-- Plugins -->
+<script src="static/mozamas/assets/js/scrollreveal.min.js"></script>
+<script src="static/mozamas/assets/js/waypoints.min.js"></script>
+<script src="static/mozamas/assets/js/jquery.counterup.min.js"></script>
+<script src="static/mozamas/assets/js/imgfix.min.js"></script>
+<script src="static/mozamas/assets/js/mixitup.js"></script>
+<script src="static/mozamas/assets/js/accordions.js"></script>
+<!-- Global Init -->
+<script src="static/mozamas/assets/js/custom.js"></script>
+</body>
+</html>
