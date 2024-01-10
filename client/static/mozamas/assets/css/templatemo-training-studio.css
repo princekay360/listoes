@@ -1272,19 +1272,6 @@ responsive
     margin: 0 0 0 7%;
 }
 
-@media (max-width: 800px) {
-  .menu-div{
-    padding: 34px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-    width: 85%;
-    margin: 0 0 0 7%;
-  }
-}
-
 .menu-cat{
     width: 20%;
     padding: 15px;
@@ -1333,4 +1320,21 @@ responsive
     float: right;
     text-align: right;
     margin: -26px 26px 0 0;
+}
+
+@media (max-width: 800px) {
+  .menu-div{
+    padding: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin: 0 0 0 7%;
+  }
+
+  .menu-cat{
+    width: 80%;
+}
 }
